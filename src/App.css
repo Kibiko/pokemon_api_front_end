@@ -1,4 +1,7 @@
 .App {
+  background-image: url("/public/background.jpg");
+  background-size: cover;
+  height: 100%;
   text-align: center;
 }
 
@@ -35,4 +38,99 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#layout{
+  display: grid;
+  grid-template-columns: 50% 5% 45%;
+}
+
+#roster{
+  grid-column: 3;
+  border: 2px;
+  border-style: solid;
+  /* border-radius: 10%; */
+  background-color: #B9E6FF;
+  margin-right: 2em;
+}
+
+#roster_list{
+  display: flex;
+  justify-content: left;
+  margin-left: 1em;
+  margin-bottom: 4em;
+}
+
+#roster_pokemon{
+  border-style: solid;
+  border-radius: 100%;
+  background-color: grey;
+  border-color: white;
+}
+
+#delete{
+  width: 1em;
+  height: 1em;
+  background-color: red;
+}
+
+#pokemon_list{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+}
+
+#all_pokemon{
+  grid-column: 1;
+  border: 2px;
+  border-style: solid;
+  border-radius: 10%;
+  background-color: #F1AB86;
+}
+
+h2{
+  display: flex;
+  margin-left: 5em;
+}
+
+#list_header{
+  display: flex;
+  justify-content: space-around;
+}
+
+#pokemon{
+  display: block;
+  width: 11em;
+  border-style: dotted;
+  border-radius: 20%;
+  border-color: black;
+  background-color: white;
+  margin-left: 6em;
+  margin-right: 3em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#logo{
+  width: 20%;
+  margin: 2em;
+}
+
+#select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  margin-right: 3em;
+}
+
+#edits{
+  display: block;
+}
+
+#types{
+  display: flex;
+  font-size: 0.75em;
+  justify-content: left;
+  text-align: left;
 }
