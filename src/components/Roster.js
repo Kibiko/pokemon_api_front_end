@@ -3,7 +3,11 @@ import RosterPokemon from "./RosterPokemon"
 const Roster = ({id, roster, pokemonList, deleteFromRoster, setCurrentRoster, currentRoster}) => {
 
     const handleCurrentRoster = () => {
-        setCurrentRoster(id);
+        if(currentRoster !== id){
+            setCurrentRoster(id);
+        } else{
+            setCurrentRoster(null);
+        }
     }
 
     const mappedPokemonRoster = roster.map((pokemon, index) => {
