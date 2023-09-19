@@ -4,7 +4,7 @@ const Pokemon = ({pokemon, number, addToRoster, typeList}) => {
 
     const numberShift = number + 1;
 
-    const imgUrl = "/sprites/sprites/pokemon/" + JSON.stringify(numberShift) + ".png"
+    const imgUrl = "sprites/sprites/sprites/pokemon/" + JSON.stringify(numberShift) + ".png"
 
     const handleAddToRoster = () => {
         addToRoster(pokemon);

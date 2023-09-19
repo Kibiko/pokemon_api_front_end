@@ -23,7 +23,7 @@ const Roster = ({id, roster, pokemonList, deleteFromRoster, setCurrentRoster, cu
 
     const displayPokeBall = () => {
         if(currentRoster === id){
-            return <img src="/sprites/sprites/items/rare-candy.png" alt=""/>;
+            return <img src="sprites/sprites/sprites/items/rare-candy.png" alt=""/>;
         }
     }
 
